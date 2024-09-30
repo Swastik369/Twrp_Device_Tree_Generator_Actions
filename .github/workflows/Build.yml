@@ -35,15 +35,15 @@ jobs:
          ls
          python -m twrpdtgen boot.img
          
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: Twrp Device Tree
           path: output/*
-#       - uses: actions/upload-artifact@v2
+#       - uses: actions/upload-artifact@v4
 #         with:
 #           name: Boot Image
 #           path: boot.img
-#       - uses: actions/upload-artifact@v2
+#       - uses: actions/upload-artifact@v4
 #         with:
 #           name: Recovery Image
 #           path: recovery.img
